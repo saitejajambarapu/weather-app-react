@@ -8,8 +8,8 @@ export default function WeatherApp() {
         Feels_Like:298.07,
         GroundLevel:988,
         Humidity:50,
-        Temp_max:28.2,
-        Temp_min:29.2,
+        Temp_max:29.2,
+        Temp_min:28.2,
         Temperature:29.2});
 
         let updateInfo = (newinfo)=>{
