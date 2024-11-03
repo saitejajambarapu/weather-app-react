@@ -1,0 +1,9 @@
+.info{
+    text-align: center;
+    
+    
+}
+.infocard{
+    display: flex;
+    justify-content: center;
+}
