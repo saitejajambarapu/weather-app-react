@@ -14,7 +14,6 @@ export default function WeatherApp() {
 
         let updateInfo = (newinfo)=>{
             setinfo(newinfo);
-            console.log("weaatherappmsasdlkgskgk");
         }
 
     return (

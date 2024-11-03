@@ -12,7 +12,6 @@ export default function SearchBox({updateInfo}){
         try{
             let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}`);
         let jsonRes = await response.json();
-        console.log(jsonRes);
         jsonRes.main.temp = Math.round(jsonRes.main.temp- 273.15);
         jsonRes.main.temp_max = Math.round(jsonRes.main.temp_max- 273.15);
         jsonRes.main.temp_min = Math.floor(jsonRes.main.temp_min- 273.15);
@@ -26,7 +25,6 @@ export default function SearchBox({updateInfo}){
             Feels_Like: jsonRes.main.feels_like,
             GroundLevel: jsonRes.main.grnd_level,
         };
-        console.log(result);
         return result;
         }catch(e){
             throw e;
