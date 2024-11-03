@@ -41,7 +41,6 @@ export default function SearchBox({updateInfo}){
     let handlesubmit = async (event)=>{
         try{
             event.preventDefault();
-        console.log(city)
         setCity("");
         let newInfo = await getWeatherInfo();
         updateInfo(newInfo);
